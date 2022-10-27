@@ -28,7 +28,10 @@
                         <a class="dropdown-item" href="#">Min profil</a>
                         <a class="dropdown-item" href="#">Innstillinger</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logg ut</a>
+                        <form action="{{ route('logout') }}" method="post">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="sub">Logg ut</a>
+                        </form>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

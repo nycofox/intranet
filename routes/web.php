@@ -26,3 +26,6 @@ Route::post('logout', [\App\Http\Controllers\Auth\SessionController::class, 'des
 
 Route::get('/auth/google', [\App\Http\Controllers\Auth\GoogleController::class, 'googleRedirect'])
     ->name('login.google');
+
+Route::get('/callback/google', [\App\Http\Controllers\Auth\GoogleController::class, 'googleCallback'])
+    ->name('callback.google');

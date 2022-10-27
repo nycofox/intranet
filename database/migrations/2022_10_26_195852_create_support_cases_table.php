@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('support_cases', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('created_by')->references('id')->on('user');
+            $table->foreignId('user_id');
             $table->string('status');
             $table->string('title');
             $table->string('description')->nullable();

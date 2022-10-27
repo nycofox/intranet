@@ -23,8 +23,6 @@ class GoogleController extends Controller
 
         $google_user = Socialite::driver('google')->user();
 
-        dd($google_user);
-
         $auth_user = User::updateOrCreate(
             [
                 'social_id' => $google_user->id
