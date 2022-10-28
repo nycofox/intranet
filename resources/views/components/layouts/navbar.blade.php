@@ -15,8 +15,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Forum</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Support</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="true" aria-expanded="false">Support</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ route('support.create') }}">Meld ny sak</a>
+                        <a class="dropdown-item" href="#">Mine saker</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Vis alle saker</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Booking</a>

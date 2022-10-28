@@ -29,3 +29,6 @@ Route::get('/auth/google', [\App\Http\Controllers\Auth\GoogleController::class, 
 
 Route::get('/callback/google', [\App\Http\Controllers\Auth\GoogleController::class, 'googleCallback'])
     ->name('callback.google');
+
+
+Route::get('support/create', [\App\Http\Controllers\SupportController::class, 'create'])->name('support.create');

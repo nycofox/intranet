@@ -11,7 +11,7 @@
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 </head>
 
-<body>
+<body class="bg-light">
 <x-navbar></x-navbar>
 <main class="container">
 {{ $slot }}
